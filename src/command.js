@@ -81,12 +81,12 @@ const embedMaker = new SlashCommandBuilder()
     )
 
 const commands = [add, message, embedMaker];
-const rest = new REST({version: '10'}).setToken('MTEzMTE0NzM2MDg5NDk3NjA3MA.G9Oh4J.C1FVEvoW23B0UimuAt_nStyztiT8Taz2mnvges');
+const rest = new REST({version: '10'}).setToken('YOUR_TOKEN');
 (async() => {
     try{
         console.log('Joining...')
         await rest.put(
-            Routes.applicationGuildCommands('1131147360894976070' ,'862373669669437500'),
+            Routes.applicationGuildCommands('BOT_ID' ,'SERVER_ID'),
             { body: commands }
         );
         console.log('Joined!')
