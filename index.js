@@ -140,5 +140,5 @@ client.on("messageCreate", (msg) => {
     msg.reply(randomWarning);}
 });
 
-client.login('MTEzMTE0NzM2MDg5NDk3NjA3MA.G9Oh4J.C1FVEvoW23B0UimuAt_nStyztiT8Taz2mnvges');
+client.login('YOUR_TOKEN');
 
